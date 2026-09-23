@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+    <title>Master Layout Test</title>
+</head>
+
+<!-- Defines the 4 main vertical rows matching the diagram -->
+<frameset rows="15%, 10%, 60%, 15%">
+    
+    <!-- Row 1 -->
+    <frame src="Header.html" name="header">
+    
+    <!-- Row 2 -->
+    <frame src="Navigation.html" name="navigation">
+    
+    <!-- Row 3: This nested frameset handles the middle split columns -->
+    <frameset cols="25%, 75%">
+        <frame src="index.html" name="index">
+        <frame src="Content.html" name="content">
+    </frameset>
+    
+    <!-- Row 4 -->
+    <frame src="fotter.html" name="footer">
+
+</frameset>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            font-size: 25px;
+            color: red;
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+
+        
+        td {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>TITLE</th>
+                <th>IMAGE</th>
+                <th>CATEGORY</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+        </tbody>
+    </table>
+
+    <script>
+        const ele = document.getElementById("data");
+        const url = "https://dummyjson.com/products";
+
+        async function loaddata() {
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+
+                console.log("Data", data.products);
+
+                let row = "";
+
+                data.products.map((i, index) => {
+                    row += `
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td>${i.title}</td>
+                            <td>
+                                <img src="${i.thumbnail}" alt="${i.title}">
+                            </td>
+                            <td>${i.category}</td>
+                            <td>$${i.price}</td>
+                        </tr>
+                    `;
+                });
+
+                ele.innerHTML = row;
+            }
+            catch (err) {
+                console.log("Error", err);
+            }
+        }
+
+        loaddata();
+    </script>
+
+</body>
+
+</html>

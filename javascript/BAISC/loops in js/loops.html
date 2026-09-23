@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // i am directly use js in html but when i send o/p i will use document.write() which is show on web page
+        // in js there 5 type of loop
+        /* 1. for loop 
+           2. while loop
+           3.do while loop
+           4. for-of loop 
+           5.for-in loop     */
+
+        //for loop------
+
+        for(let i=0;i<10;i++){
+            document.write("pratyush")
+            document.write("<br>") 
+        }
+
+
+        // while loop ---
+        let a=5;
+        while(a>0){
+            document.write("<hr> sun le zara");
+            a--;
+        }
+
+
+
+        //do while loop----
+        let i=3;
+        do{
+            document.write("<br> <br> agar condition true ho ya na mein toh km se km ek barr run krunga");
+            i--;
+        } while(i>0);
+
+
+        //for of loop---
+
+        let str="pratyush";
+        //it automtically detect value of i which equal to suze of str 
+        let size=0;
+        for(let i of str ){                   //similar to c++ ranged based loop for(char c : str)
+            document.write("<br> i=",i);  
+            size++;
+        }
+        document.write("<br>")
+        document.write(" no of times loop run = size of str =<br>",size );
+
+        // for in loop---
+        let student={
+            name : "pratyush",
+            age : 21,
+            roll : 831,
+            ispass : true,
+        };
+
+        
+        //for in loop ---   //used for acces key of object 
+        for(let i in student){
+            document.write("<br> key =",i," value= ",student[i]);
+            // see logic---*****imp
+            //we can not use student.i with loop 
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
