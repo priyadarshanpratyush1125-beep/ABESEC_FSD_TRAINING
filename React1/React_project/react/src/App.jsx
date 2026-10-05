@@ -8,8 +8,10 @@ const App = () => {
         <div>
            <h1>STUDENT RECORD</h1>
         </div>
-        <div>
-          <Student/>
+        <div style={{display: 'flex',gap: '15px'}}>
+          <Student name="Rohit" roll="201" class="cse23"/>
+          <br />
+          <Student name="pratyush" roll="831" class="cse24"/>
         </div>
     </div>   
   )
