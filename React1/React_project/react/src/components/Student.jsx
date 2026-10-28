@@ -27,4 +27,3 @@ const Student = (props) => {
   );
 };
 
-export default Student;
