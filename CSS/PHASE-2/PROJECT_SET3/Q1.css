@@ -1,0 +1,32 @@
+div{
+    height: 400px;
+    width: 150px;
+    background-color: black;
+    margin:15px 15px 15px 15px;
+    
+
+
+}
+
+
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin:15px 15px 15px 15px;
+}
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    border-radius: 50%;
+    margin: 15px 15px 15px 15px;
+}
+#div3{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+    border-radius: 50%;
+    margin: 15px 15px 15px 15px;
+}
