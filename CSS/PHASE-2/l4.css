@@ -1,0 +1,30 @@
+div{
+    background-color: pink;
+    height:100px;
+    width:100px;
+    margin:25px;
+    padding:25px;
+    display:inline
+
+}
+button{
+    background-color: orange;
+    display:block;
+}
+
+#div1{
+    
+    background-color: blue;
+}
+#div2{
+   
+    background-color: red;
+}
+#div3{
+    
+    background-color: green;
+}
+#div4{
+    background-color: RGBA(225,225,0,025);
+    display:inline-block;
+}
