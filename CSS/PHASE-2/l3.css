@@ -1,0 +1,26 @@
+div{
+    background-color: orange;
+    height: 100px;
+    width:100px;
+    /* border-width:5px;
+    border-style:solid;
+    border-color:red; */
+    border:2px solid red;
+    /*padding-left: 25px;
+    padding-right:25px;
+    padding-top:25px;
+    padding-bottom:25px;*/
+
+    /* use clock-wise(T,R,B,L)  */
+    padding:25px 25px 25px 25px;
+    /* by deafult padding:25px set in T,R,B,L */
+
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    */
+    /* use clock-wise (T,R,B,L) */
+    margin:20px 20px 20px 20px ;
+
+}
